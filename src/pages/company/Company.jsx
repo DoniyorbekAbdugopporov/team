@@ -23,6 +23,9 @@ import team5 from "../../assets/Team 4.png";
 import team6 from "../../assets/Team 6.png";
 import team7 from "../../assets/Team 7.png";
 import team8 from "../../assets/Team 8.png";
+import instagram from "../../assets/instagram.svg";
+import linkedin from "../../assets/linkedin.svg";
+import twitter from "../../assets/twitter.svg";
 
 const Company = () => {
   return (
@@ -231,21 +234,39 @@ const Company = () => {
                   {/* Dark Overlay */}
                   <div className="absolute inset-0 bg-black bg-opacity-60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     {/* Icons */}
-                    <div className="flex space-x-4">
-                      <a
-                        href="https://instagram.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-white text-2xl hover:text-gray-300"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </a>
-                      <a
-                        href="mailto:someone@example.com"
-                        className="text-white text-2xl hover:text-gray-300"
-                      >
-                        <i className="fas fa-envelope"></i>
-                      </a>
+                    <div className="flex flex-col translate-x-[-70px] translate-y-[80px]">
+                      <div className="info flex flex-col">
+                        <h4 className="text-white size-10">Javena Melo</h4>
+                        <p className="text-white">Support Assist</p>
+                      </div>
+                      <div className="icons flex gap-4">
+                        <a
+                          href="mailto:someone@example.com"
+                          className="text-white text-2xl hover:text-gray-300"
+                        >
+                          <i className="fas fa-envelope">
+                            <img src={twitter} alt="" />
+                          </i>
+                        </a>
+                        <a
+                          href="https://instagram.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-white text-2xl hover:text-gray-300"
+                        >
+                          <i className="fab fa-instagram">
+                            <img src={instagram} alt="" />
+                          </i>
+                        </a>
+                        <a
+                          href="mailto:someone@example.com"
+                          className="text-white text-2xl hover:text-gray-300"
+                        >
+                          <i className="fas fa-envelope">
+                            <img src={linkedin} alt="" />
+                          </i>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
