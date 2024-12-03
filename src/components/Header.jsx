@@ -34,7 +34,8 @@ const Header = () => {
                 }`
               }
             >
-              Service
+              Service   
+              
             </NavLink>
             <NavLink
               to={"/company"}
