@@ -9,16 +9,73 @@ const Header = () => {
       <div className="container">
         <nav className="flex justify-between py-7">
           <div>
-            <img src={logo} alt="" />
+            <img src={logo} alt="Logo" />
           </div>
           <div className="flex items-center gap-8">
-            <NavLink className="text-base leading-6 text-[#FFFFFF]" to={"/"}>Home</NavLink>
-            <NavLink className="text-base leading-6 text-[#FFFFFF]" to={"/service"}>Service</NavLink>
-            <NavLink className="text-base leading-6 text-[#FFFFFF]" to={"/company"}>Company</NavLink>
-            <NavLink className="text-base leading-6 text-[#FFFFFF]" to={"/career"}>Career</NavLink>
-            <NavLink className="text-base leading-6 text-[#FFFFFF]" to={"/login"}>Log In</NavLink>
-            <div className="flex items-center gap-2 text-[#FFD3AF]">
-              <a href="#" className="text-base leading-6">Clone project</a>
+            <NavLink
+              to={"/"}
+              className={({ isActive }) =>
+                `relative text-base leading-6 text-[#FFFFFF]  text-[16px]${
+                  isActive
+                    ? "after:content-[''] after:absolute after:h-1 after:translate-y-[-30px] after:w-full after:left-0 after:bg-[#FFD3AF] text-[16px] top-0"
+                    : ""
+                }`
+              }
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to={"/service"}
+              className={({ isActive }) =>
+                `relative text-base leading-6 text-[#FFFFFF]  text-[16px]${
+                  isActive
+                    ? "after:content-[''] after:absolute after:h-1 after:translate-y-[-30px] after:w-full after:left-0 after:bg-[#FFD3AF] text-[16px] top-0"
+                    : ""
+                }`
+              }
+            >
+              Service
+            </NavLink>
+            <NavLink
+              to={"/company"}
+              className={({ isActive }) =>
+                `relative text-base leading-6 text-[#FFFFFF] text-[16px]${
+                  isActive
+                    ? "after:content-[''] after:absolute after:h-1 after:translate-y-[-30px] after:w-full after:left-0 after:bg-[#FFD3AF] text-[16px] top-0"
+                    : ""
+                }`
+              }
+            >
+              Company
+            </NavLink>
+            <NavLink
+              to={"/career"}
+              className={({ isActive }) =>
+                `relative text-base leading-6 text-[#FFFFFF]  text-[16px]${
+                  isActive
+                    ? "after:content-[''] after:absolute after:h-1 after:translate-y-[-30px] after:w-full after:left-0 after:bg-[#FFD3AF] text-[16px] top-0"
+                    : ""
+                }`
+              }
+            >
+              Career
+            </NavLink>
+            <NavLink
+              to={"/login"}
+              className={({ isActive }) =>
+                `relative text-base leading-6 text-[#FFFFFF]  text-[16px]${
+                  isActive
+                    ? "after:content-[''] after:absolute after:h-1 after:translate-y-[-30px] after:w-full after:left-0 after:bg-[#FFD3AF] text-[16px] top-0"
+                    : ""
+                }`
+              }
+            >
+              Log In
+            </NavLink>
+            <div className="flex items-center gap-2 text-[#FFD3AF] text-[16px]">
+              <a href="#" className="leading-6 text-[16px]">
+                Clone project
+              </a>
               <FaArrowRightLong className="text-[#FFFFFF]" />
             </div>
           </div>
