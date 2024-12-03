@@ -14,47 +14,50 @@ import img_3 from "./assets/Image-24.png";
 import img_4 from "./assets/Image-25.png";
 import img_5 from "./assets/Image-26.png";
 
-
 const cardData = [
   {
     image: img_1,
     title: "Technical Support",
-    about:"Best in class tech support for your company. We become your tech backbone ",
+    about:
+      "Best in class tech support for your company. We become your tech backbone ",
     description:
       "Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.",
-      bg:'white'
+    bg: "white",
   },
   {
     image: img_2,
     title: "Developoment",
-    about:"Bring your ideas to reality with certified team of developers, working with latest technologies ",
+    about:
+      "Bring your ideas to reality with certified team of developers, working with latest technologies ",
     description:
       "Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.",
-      bg:'#ECF8F9'
+    bg: "#ECF8F9",
   },
   {
     image: img_3,
     title: "AWS/Azure ",
-    about:"We help you deploy, manage and secure your application on leading web services",
+    about:
+      "We help you deploy, manage and secure your application on leading web services",
     description:
       "Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.",
-      bg:'white'
+    bg: "white",
   },
   {
     image: img_4,
     title: "Consulting",
-    about:"Get advice from world class professionals ",
+    about: "Get advice from world class professionals ",
     description:
       "Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.",
-      bg:'#F9F9FF'
+    bg: "#F9F9FF",
   },
   {
     image: img_5,
     title: "Information Technology",
-    about:"We want to get local identification in every corner of the world in this era of global citizenship.",
+    about:
+      "We want to get local identification in every corner of the world in this era of global citizenship.",
     description:
       "Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. Through True Rich Attended does no end it his mother since real had half every.",
-      bg:'white'
+    bg: "white",
   },
 ];
 
