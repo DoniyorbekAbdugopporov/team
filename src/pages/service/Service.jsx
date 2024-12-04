@@ -215,37 +215,39 @@ const Service = ({ cardData }) => {
       </div>
 
       <div className="mt-20">
-      <div className="container">
-        <div className="flex flex-col items-center gap-8 px-4 py-8">
-        {cardData.map((item, index) => (
-        <div
-          key={index}
-          className={`flex flex-col-reverse lg:flex-row ${
-            index % 2 !== 0 ? "lg:flex-row-reverse" : ""
-          } items-center gap-8 bg-${item.bg} p-6  rounded-lg`}
-          style={{ backgroundColor: item.bg }}
-        >
-          {/* Text Section */}
-          <div className="text-center lg:text-left lg:w-1/2">
-            <h2 className="text-[24px] font-semibold text-[#232536]  mb-2">
-              {item.title}
-            </h2>
-            <p className="text-[#232536] font-bold text-[36px] mb-4">{item.about}</p>
-            <p className="text-[#232536] ">{item.description}</p>
+        <div className="container">
+          <div className="flex flex-col items-center gap-8 px-4 py-8">
+            {cardData.map((item, index) => (
+              <div
+                key={index}
+                className={`flex flex-col-reverse lg:flex-row ${
+                  index % 2 !== 0 ? "lg:flex-row-reverse" : ""
+                } items-center gap-8 bg-${item.bg} p-6  rounded-lg`}
+                style={{ backgroundColor: item.bg }}
+              >
+                {/* Text Section */}
+                <div className="text-center lg:text-left lg:w-1/2">
+                  <h2 className="text-[24px] font-semibold text-[#232536]  mb-2">
+                    {item.title}
+                  </h2>
+                  <p className="text-[#232536] font-bold text-[36px] mb-4">
+                    {item.about}
+                  </p>
+                  <p className="text-[#232536] ">{item.description}</p>
+                </div>
+                {/* Image Section */}
+                <div className="lg:w-1/2">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full max-w-xs mx-auto lg:mx-0 rounded-lg "
+                  />
+                </div>
+              </div>
+            ))}
           </div>
-          {/* Image Section */}
-          <div className="lg:w-1/2">
-            <img
-              src={item.image}
-              alt={item.title}
-              className="w-full max-w-xs mx-auto lg:mx-0 rounded-lg "
-            />
-          </div>
-        </div>
-      ))}
         </div>
       </div>
-    </div>
     </main>
   );
 };

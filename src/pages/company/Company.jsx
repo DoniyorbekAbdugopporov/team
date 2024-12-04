@@ -275,7 +275,6 @@ const Company = () => {
             )}
           </div>
         </div>
-        <Newsletter/>
       </div>
     </main>
   );

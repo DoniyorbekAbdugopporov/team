@@ -1,12 +1,15 @@
 import React from "react";
 import logo from "../assets/footerLogo.svg";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import Newsletter from "./Newsletter";
 
 const Footer = () => {
   return (
     <footer>
       <section>
-        <div className="container">
+        
+        <div className="container mt-16">
+          <Newsletter/>
           <div className="flex justify-between">
             <div className="left max-w-[452px]">
               <h2 className="text-5xl leading-[58px] font-semibold mt-[66px]">
