@@ -26,6 +26,7 @@ import team8 from "../../assets/Team 8.png";
 import instagram from "../../assets/instagram.svg";
 import linkedin from "../../assets/linkedin.svg";
 import twitter from "../../assets/twitter.svg";
+import Newsletter from "../../components/Newsletter";
 
 const Company = () => {
   return (
@@ -274,6 +275,7 @@ const Company = () => {
             )}
           </div>
         </div>
+        <Newsletter/>
       </div>
     </main>
   );
